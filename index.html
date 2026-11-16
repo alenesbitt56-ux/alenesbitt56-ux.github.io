@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandra Nesbitt</title>
+  <meta name="description" content="Página personal de Alejandra Nesbitt, estudiante de Ingeniería en Sistemas Computacionales en La Salle Chihuahua.">
+  <style>
+    /* Colores y tipografías en un solo lugar para cambiarlos fácil */
+    :root {
+      --fondo: #f1f2f0;
+      --superficie: #fafaf9;
+      --texto: #1f2326;
+      --texto-suave: #5b646a;
+      --linea: #d8dbdb;
+      --acento: #3d5865;
+      --acento-texto: #ffffff;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fondo: #16191b;
+        --superficie: #1d2124;
+        --texto: #e9ebec;
+        --texto-suave: #9ba4aa;
+        --linea: #2f3539;
+        --acento: #9dbac7;
+        --acento-texto: #101416;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+
+    .pagina {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    /* Encabezado: el nombre es lo más grande de la página */
+    header { margin-bottom: 3.5rem; }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.6rem, 11vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem;
+    }
+    .subtitulo {
+      margin: 0;
+      color: var(--texto-suave);
+      font-size: 1.125rem;
+    }
+
+    section {
+      padding: 2rem 0;
+      border-top: 1px solid var(--linea);
+    }
+    h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin: 0 0 1rem;
+    }
+    p { margin: 0 0 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* Listas */
+    ul { list-style: none; margin: 0; padding: 0; }
+    .intereses li {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--linea);
+    }
+    .intereses li:last-child { border-bottom: 0; }
+
+    .aprender li {
+      background: var(--superficie);
+      border: 1px solid var(--linea);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .aprender li:last-child { margin-bottom: 0; }
+    .aprender strong { display: block; font-weight: 600; }
+    .aprender span { color: var(--texto-suave); font-size: 0.975rem; }
+
+    /* Enlace a GitHub */
+    .boton {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.8rem 1.4rem;
+      background: var(--acento);
+      color: var(--acento-texto);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+    .boton:hover { opacity: 0.88; }
+    .boton:focus-visible {
+      outline: 3px solid var(--acento);
+      outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--linea);
+      color: var(--texto-suave);
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 40rem) {
+      .pagina { padding-top: 6rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+
+    <!-- Encabezado con tu nombre -->
+    <header>
+      <h1>Alejandra Nesbitt</h1>
+      <p class="subtitulo">Estudiante de Ingeniería en Sistemas Computacionales, Universidad La Salle Chihuahua</p>
+    </header>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Alejandra. Estoy en primer semestre de Ingeniería en Sistemas Computacionales en la Universidad La Salle Chihuahua, en Chihuahua, México.</p>
+      <p>Estoy empezando a construir mis primeros proyectos y esta página es uno de ellos. Me interesa entender cómo funcionan las cosas por dentro y usar la tecnología para resolver problemas reales.</p>
+    </section>
+
+    <!-- Intereses -->
+    <section id="intereses">
+      <h2>Mis intereses</h2>
+      <ul class="intereses">
+        <li>Programación y resolución de problemas</li>
+        <li>Crear aplicaciones útiles en el día a día</li>
+        <li>Tecnología aplicada al mundo real, como sensores y automatización</li>
+        <li>Aprender de forma práctica, probando y equivocándome</li>
+      </ul>
+    </section>
+
+    <!-- Lo que quiero aprender -->
+    <section id="aprender">
+      <h2>Lo que quiero aprender</h2>
+      <ul class="aprender">
+        <li>
+          <strong>Programación sólida</strong>
+          <span>Lógica, algoritmos y buenas prácticas para escribir código claro.</span>
+        </li>
+        <li>
+          <strong>Desarrollo web</strong>
+          <span>Crear sitios y aplicaciones que se vean bien en cualquier pantalla.</span>
+        </li>
+        <li>
+          <strong>Bases de datos</strong>
+          <span>Guardar y consultar información de forma ordenada.</span>
+        </li>
+        <li>
+          <strong>Git y GitHub</strong>
+          <span>Llevar el control de mis proyectos y trabajar en equipo.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Enlace a GitHub -->
+    <section id="github">
+      <h2>Mi GitHub</h2>
+      <p>Aquí voy subiendo mis proyectos.</p>
+      <!-- Cambia "tu-usuario" por tu nombre de usuario de GitHub -->
+      <a class="boton" href="https://github.com/alenesbitt56-ux" target="_blank" rel="noopener noreferrer">Ver mi perfil en GitHub</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Alejandra Nesbitt</p>
+    </footer>
+
+  </main>
+</body>
+</html>
